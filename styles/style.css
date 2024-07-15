@@ -105,20 +105,21 @@ main {
 .teams {
   margin-top: 85px;
   display: flex;
-  justify-content: center;
+  margin-left: 45px;
   align-items: center;
 }
 .teams-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 15px;
 }
 .teams-img img {
-  /* width: 100%; */
+  width: 245px;
 }
 .quick-list-info {
+  margin-top: 50px;
   margin-left: 40px;
-  max-width: 288px;
+  max-width: 370px;
 }
 .quick-list-title {
   font-weight: 700;
@@ -139,12 +140,76 @@ main {
 .quick-list-description {
   margin-bottom: 30px;
 }
+/* Love And Enjoy Section in CSS */
+.love-enjoy {
+  display: flex;
+  margin-top: 120px;
+  
+}
+.love-enjoy-content{
+    margin-right: 120px;
+}
+.love-enjoy-info{
+    margin-bottom: 20px;
+}
+.love-enjoy-title {
+  border-left: 3px solid #ff900e;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.love-enjoy-description {
+   font-size: 1rem;
+}
+.card-box {
+  padding:15px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.card-box-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.card-box-description{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.love-enjoy-img img{
+    max-width: 568px;
+}
+.btn-experience{
+    background-color: #ff900e;
+    padding: 40px 35px;
+    border: none;
+    border-radius: 8px;
+    margin-top: -90px;
+    margin-left: -70px;
+}
+.years{
+    font-weight: 700;
+    font-size: 4rem;
+    color: #ffffff;
+}
+.experience{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #ffffff;
+}
 /* Responsive With Small Devices */
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .teams {
+  .teams,
+  .love-enjoy {
     flex-direction: column;
+  }
+  .love-enjoy{
+    margin-left: 50px;
+  }
+  .love-enjoy-content{
+    margin-bottom: 25px;
   }
   .teams-img {
     grid-template-columns: 1fr;
@@ -153,5 +218,12 @@ main {
   }
   .quick-list-info {
     margin-left: 10px;
+  }
+  .love-enjoy-img img{
+    width: 100%;
+  }
+  .btn-experience{
+    margin-left:70px;
+    margin-top:20px;
   }
 }
