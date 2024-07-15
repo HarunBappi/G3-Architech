@@ -1,0 +1,157 @@
+/* Import Work Sans Google Font  */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Shared CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Dark-1 */
+.text-primary {
+  color: #131313;
+}
+/* Dark-2 */
+.text-secondary {
+  color: #424242;
+}
+/* Dark-3 */
+.text-gray {
+  color: #727272;
+}
+/* Primary-btn */
+.btn-primary {
+  background-color: #ff900e;
+}
+/* Header style in CSS */
+.bg-color {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.header-container {
+  max-width: 1366px;
+}
+
+/* Navbar Style in CSS */
+.navbar {
+  max-width: 1022px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.brand-name {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Banner Style in CSS */
+.banner {
+  max-width: 1022px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+.banner-description {
+  margin-bottom: 30px;
+}
+.explore-btn {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 20px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.banner-image img {
+  width: 100%;
+}
+
+/* Main section Style in CSS */
+main {
+  max-width: 1022px;
+  margin: 0 auto;
+}
+.teams {
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teams-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.teams-img img {
+  /* width: 100%; */
+}
+.quick-list-info {
+  margin-left: 40px;
+  max-width: 288px;
+}
+.quick-list-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #131313;
+  margin-bottom: 20px;
+}
+#text-quick-list {
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #727272;
+}
+#features {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #ff900e;
+}
+.quick-list-description {
+  margin-bottom: 30px;
+}
+/* Responsive With Small Devices */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+  .teams-img {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .quick-list-info {
+    margin-left: 10px;
+  }
+}
