@@ -323,3 +323,31 @@ main {
     justify-items: center;
   }
 }
+
+/* Rsponsive with Medium Device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .navbar,
+    .teams{
+        flex-direction: column;
+       gap: 50px;
+    }
+    .love-enjoy{
+        flex-direction: column-reverse;
+    }
+    .btn-experience{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .love-enjoy-content,
+    .some-fact-info{
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+    .card-container,
+    .sponsor-images{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sponsor-images{
+        justify-items: center;
+    }
+}
