@@ -144,13 +144,13 @@ main {
 .love-enjoy {
   display: flex;
   margin-top: 120px;
-  
 }
-.love-enjoy-content{
-    margin-right: 120px;
+.love-enjoy-content {
+  margin-right: 120px;
+  max-width: 450px;
 }
-.love-enjoy-info{
-    margin-bottom: 20px;
+.love-enjoy-info {
+  margin-bottom: 20px;
 }
 .love-enjoy-title {
   border-left: 3px solid #ff900e;
@@ -158,10 +158,10 @@ main {
   margin-bottom: 20px;
 }
 .love-enjoy-description {
-   font-size: 1rem;
+  font-size: 1rem;
 }
 .card-box {
-  padding:15px;
+  padding: 15px;
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   margin-bottom: 20px;
@@ -172,30 +172,107 @@ main {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.card-box-description{
-    margin-top: 10px;
-    font-size: 1rem;
+.card-box-description {
+  margin-top: 10px;
+  font-size: 1rem;
 }
-.love-enjoy-img img{
-    max-width: 568px;
+.love-enjoy-img img {
+  width: 100%;
+  height: 100%;
 }
-.btn-experience{
-    background-color: #ff900e;
-    padding: 40px 35px;
-    border: none;
-    border-radius: 8px;
-    margin-top: -90px;
-    margin-left: -70px;
+.btn-experience {
+  background-color: #ff900e;
+  padding: 40px 35px;
+  border: none;
+  border-radius: 8px;
+  margin-top: -90px;
+  margin-left: -70px;
 }
-.years{
+.years {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffffff;
+}
+.experience {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+/* Style With Some Face Section CSS */
+.some-fact-container {
+    
+}
+.some-fact-info {
+  margin-top: 50px;
+  max-width: 450px;
+}
+.some-favt-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+.some-fact-description {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+.some-fact-card {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  max-width: 200px;
+  max-height: 200px;
+  justify-items: center;
+  text-align: center;
+  padding: 30px 20px;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.card-description {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Style Our-Sponsor CSS */
+.our-sponsor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.sponsor-info{
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-title{
     font-weight: 700;
-    font-size: 4rem;
-    color: #ffffff;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
 }
-.experience{
+.sponsor-description{
     font-weight: 500;
-    font-size: 1.25rem;
-    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 45px;
+}
+.sponsor-images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap:50px;
+}
+.sponsor-images img{
+    width: 165px;
+    height: 50px;
+    filter: grayscale(100%);
 }
 /* Responsive With Small Devices */
 @media screen and (max-width: 576px) {
@@ -205,25 +282,31 @@ main {
   .love-enjoy {
     flex-direction: column;
   }
-  .love-enjoy{
+  .love-enjoy {
     margin-left: 50px;
   }
-  .love-enjoy-content{
+  .love-enjoy-content {
     margin-bottom: 25px;
   }
-  .teams-img {
+  .teams-img,
+  .sponsor-images {
     grid-template-columns: 1fr;
     gap: 30px;
     margin-bottom: 20px;
   }
-  .quick-list-info {
-    margin-left: 10px;
+  .sponsor-images{
+    justify-items: center;
   }
-  .love-enjoy-img img{
-    width: 100%;
+  .btn-experience {
+   margin-left: 20px;
+   margin-top: 20px;
   }
-  .btn-experience{
-    margin-left:70px;
-    margin-top:20px;
+  .some-fact-info{
+    margin-left: 20px;
+  }
+  .card-container{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
   }
 }
